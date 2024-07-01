@@ -13,7 +13,7 @@ const playHuman = (humanChoice) => {
 
 
 const playMachine = () => {
-    const choices = ['rock', 'paper', 'sciossors']
+    const choices = ['rock', 'paper', 'scissors']
     const randomNumber = Math.floor(Math.random() * 3)
 
     return choices[randomNumber]
@@ -30,7 +30,7 @@ const playTheGame = (human, machine) => {
         (human === 'scissors' && machine === 'paper')) {
 
         humanScoreNumber++
-        humanScore.innerHTML = humanScoreNumber
+        myScore.innerHTML = humanScoreNumber
         result.innerHTML = "Você Ganhou!"
     } else {
 
